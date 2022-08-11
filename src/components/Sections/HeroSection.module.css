@@ -1,0 +1,80 @@
+ .row
+{
+    padding: 50px 0;
+    max-width: 1200px
+}
+
+ .text__div
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 10%;
+    color: var(--textcolor);
+}
+
+ .text__div h1
+{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 20px ;
+}
+
+ .text__div h1 span
+{
+    color : var(--primaryitemcolor);
+}
+
+ .text__div p
+{
+    font-size: 20px;
+    margin-bottom: 20px ;
+}
+
+ .food__image
+{
+    display: block;
+    margin-left: auto ;
+    width: 87%;
+}
+
+@media only screen and (max-width: 991px)
+{
+    
+ .text__div
+ {
+     position: static;
+     transform: translateY(0%);
+    text-align: left;
+     padding-right: 0;
+ }
+
+ .food__image
+ {
+     margin: auto ;
+     width: 70%;
+ }
+ 
+ 
+}
+
+@media only screen and (max-width: 576px)
+{
+
+
+    .text__div
+    {
+        padding: 0 2% 0 2%;
+    }
+
+    .text__div h1
+    {
+        font-size: 36px;
+    }
+    
+    .food__image
+ {
+     margin-top: 20px ;
+ }
+
+}
