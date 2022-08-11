@@ -38,6 +38,42 @@
     width: 87%;
 }
 
+.number__properties
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.number__properties .number__properties__digit
+{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.number__properties .number__properties__text
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondarytextcolor);
+}
+
+@media only screen and (min-width:1400px) and (min-height: 900px)
+{
+
+    .row
+    {
+        padding: 80px 0;
+    } 
+
+    .number__properties
+    {
+      padding: 50px;
+    }
+    
+}
+
 @media only screen and (max-width: 991px)
 {
     
@@ -54,7 +90,6 @@
      margin: auto ;
      width: 70%;
  }
- 
  
 }
 
@@ -76,5 +111,11 @@
  {
      margin-top: 20px ;
  }
+
+ .number__properties
+{
+    display: block;
+}
+
 
 }

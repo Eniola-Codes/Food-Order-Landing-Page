@@ -9,7 +9,8 @@ const TheNavbar = () =>
 {
 
     return (
-        <Navbar  expand="xl" className={`${classes.navbar}`}>
+        <Navbar  expand="xl" className={`${classes.navbar}`} data-aos="fade-down" data-aos-easing="ease-out"
+        data-aos-duration="2000">
         
           <Navbar.Brand href="#home"><img src={Logo} alt='My logo'></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className={classes.toggle} />
