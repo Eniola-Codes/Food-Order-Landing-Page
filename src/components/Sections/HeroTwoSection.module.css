@@ -1,0 +1,115 @@
+.row
+{
+    padding: 100px 0 50px 0;
+    max-width: 1200px
+}
+
+.header_div
+{
+    text-align: center;
+}
+
+.header_div h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primaryitemcolor);
+}
+
+.header_div p
+{
+    color: var(--textcolor);
+    font-size: 20px;
+}
+
+.row_cards
+{
+    max-width: 1200px;
+    padding: 50px 0;
+    background-color: rgb(255, 233, 224,0.6);
+}
+
+.row_cards .first_col
+{
+    padding-left: 0;
+}
+
+.row_cards .last_col
+{
+    padding-right: 0;
+}
+
+
+.row_cards .card
+{
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.row_cards .card_two
+{
+    box-shadow: 19.5481px 19.5481px 39.0962px rgba(0, 0, 0, 0.05);
+}
+
+.row_cards .card_text_div
+{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 991px)
+{
+    
+    .row_cards .first_col
+{
+    padding-left: 0.75rem;
+}
+
+.row_cards .last_col
+{
+    padding-right: 0.75rem;
+}
+
+.row_cards .card
+{
+    box-shadow: 19.5481px 19.5481px 39.0962px rgba(0, 0, 0, 0.05);
+}
+
+
+.row_cards
+{
+    padding: 0px 20px 30px 20px;
+}
+
+.row_cards .card
+{
+    text-align: start;
+    height: 250px;
+    margin-top: 30px;
+    padding: 0 5%;
+}
+
+.row_cards .card_text_div
+{
+    margin-top: 10px;
+}
+    
+}
+
+@media only screen and (max-width: 576px)
+{
+    .header_div h2
+{
+    font-size: 36px;
+}
+
+.header_div p
+{
+    font-size: 16px;
+}
+
+}

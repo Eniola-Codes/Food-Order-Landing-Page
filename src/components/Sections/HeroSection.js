@@ -17,7 +17,7 @@ const HeroSection = () => {
               Enjoy <span>home made meals</span> far away from home
             </h1>
             <p>
-              Helping you enjoy confortable and health food anywhere and anytime on the go
+              Helping you enjoy comfortable and health food anywhere and anytime on the go
             </p>    
             <TheButton>Order now</TheButton>
             </div>
@@ -25,13 +25,14 @@ const HeroSection = () => {
           <Col lg={6} className='p-0'>
             <div className={`ms-auto`} >
             <img className={classes.food__image} src={FoodImage} fluid='true' alt='Food pic'  data-aos="fade-left" data-aos-easing="ease-out"
-     data-aos-duration="1200"></img>
+     data-aos-duration="1500"></img>
             </div>
           </Col>
         </Row>
         <Row >
           <div className={classes.number__properties}>
-          <div>
+          <div data-aos="fade-up" data-aos-easing="ease-out"
+     data-aos-duration="700" >
             <p className={classes.number__properties__digit}>
           500+
             </p>
@@ -39,7 +40,8 @@ const HeroSection = () => {
                 Food partners
               </p>
           </div>
-          <div className="mx-4">
+          <div className="mx-4" data-aos="fade-up" data-aos-easing="ease-out"
+     data-aos-duration="700" data-aos-delay="200">
             <p className={classes.number__properties__digit}>
             1k+
             </p>
@@ -47,7 +49,8 @@ const HeroSection = () => {
               orders delivered
               </p>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-easing="ease-out"
+     data-aos-duration="700" data-aos-delay="400">
             <p className={classes.number__properties__digit}>
             12k+
             </p>

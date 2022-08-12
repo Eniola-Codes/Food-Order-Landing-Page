@@ -1,0 +1,38 @@
+.row
+{
+    padding: 100px 0 50px 0;
+    max-width: 1200px
+}
+
+.header_div
+{
+    text-align: center;
+}
+
+.header_div h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primaryitemcolor);
+}
+
+.header_div p
+{
+    color: var(--textcolor);
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 576px)
+{
+    .header_div h2
+{
+    font-size: 36px;
+}
+
+.header_div p
+{
+    font-size: 16px;
+}
+
+}
