@@ -29,10 +29,10 @@ const HeroSection = () => {
             </div>
           </Col>
         </Row>
-        <Row >
+        <Row data-aos="fade-up" data-aos-easing="ease-out"
+     data-aos-duration="700">
           <div className={classes.number__properties}>
-          <div data-aos="fade-up" data-aos-easing="ease-out"
-     data-aos-duration="700" >
+          <div >
             <p className={classes.number__properties__digit}>
           500+
             </p>
@@ -40,8 +40,7 @@ const HeroSection = () => {
                 Food partners
               </p>
           </div>
-          <div className="mx-4" data-aos="fade-up" data-aos-easing="ease-out"
-     data-aos-duration="700" data-aos-delay="200">
+          <div className="mx-4" >
             <p className={classes.number__properties__digit}>
             1k+
             </p>
@@ -49,8 +48,7 @@ const HeroSection = () => {
               orders delivered
               </p>
           </div>
-          <div data-aos="fade-up" data-aos-easing="ease-out"
-     data-aos-duration="700" data-aos-delay="400">
+          <div>
             <p className={classes.number__properties__digit}>
             12k+
             </p>
