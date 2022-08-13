@@ -60,30 +60,26 @@
   font-weight: 500;
 }
 
-
 @media only screen and (max-width: 991px) {
+  .row_dish {
+    border-bottom: none;
+  }
 
+  .dish_content {
+    padding: 0 30px;
+  }
 
-.row_dish {
-  border-bottom: none;
-}
+  .dish_col {
+    padding: 30px 0;
+  }
 
-.dish_content {
-  padding: 0 30px;
-}
+  .dish_col_mid {
+    border: none;
+  }
 
-.dish_col {
-  padding: 30px 0;
-}
-
-.dish_col_mid {
-border:none
-}
-
-.dish_col {
+  .dish_col {
     border-bottom: 1px solid var(--bordercolor);
   }
-  
 }
 
 @media only screen and (max-width: 576px) {
