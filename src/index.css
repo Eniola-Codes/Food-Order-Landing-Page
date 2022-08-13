@@ -11,11 +11,13 @@
 :root {
   --primarybackground: #ffe9e0;
   --primaryitemcolor : #FF4D00;
+  --textcolor: rgba(0,0,0,0.81);
   --primarytextcolor: #000000;
   --secondarytextcolor: #959190;
+  --tertiarytextcolor: #443D3D;
+  --bordercolor : rgba(255, 77, 0,0.6);
   --light: #FFFFFF;
   --dark: #000000;
-  --textcolor: rgba(0,0,0,0.81);
 }
 
 body {

@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from './HeroSection';
 import HeroTwoSection from './HeroTwoSection';
 import HeroThreeSection from './HeroThreeSection';
+import HeroFourSection from './HeroFourSection';
 
 
 const Sections = () =>
@@ -12,6 +13,7 @@ const Sections = () =>
         <HeroSection/>
         <HeroTwoSection/>
         <HeroThreeSection/>
+        <HeroFourSection/>
     </main>
     );
 }

@@ -1,0 +1,13 @@
+.input_amount
+{
+    width: 50px;
+    border: 1px solid var(--bordercolor);
+    border-radius: 3px;
+}
+
+.input_amount:focus,
+.input_amount:active
+{
+    outline: none;
+    border: 2px solid var(--primaryitemcolor);
+}

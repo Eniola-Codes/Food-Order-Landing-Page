@@ -1,8 +1,8 @@
 .button
 {
-    width: 140px;
+    width: 130px;
     border: none;
-    padding: 10px 0;
+    padding: 8px 0;
     background-color: var(--primaryitemcolor);
     color: white;
     border-radius: 7px;

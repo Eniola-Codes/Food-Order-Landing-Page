@@ -9,7 +9,7 @@ const TheNavbar = () =>
 {
 
     return (
-        <Navbar  expand="xl" className={`${classes.navbar}`} data-aos="fade-down" data-aos-easing="ease-out"
+        <Navbar  expand="xl" className={`${classes.navbar} fixed-top`} data-aos="fade-down" data-aos-easing="ease-out"
         data-aos-duration="2000">
         
           <Navbar.Brand href="#home"><img src={Logo} alt='My logo'></img></Navbar.Brand>
