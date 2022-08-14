@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./HeroThreeSection.module.css";
@@ -9,6 +9,9 @@ import dish2 from "../../assets/image/dish2.png";
 import dish3 from "../../assets/image/dish3.png";
 
 const HeroThreeSection = () => {
+
+
+
   return (
     <section>
       <Container>

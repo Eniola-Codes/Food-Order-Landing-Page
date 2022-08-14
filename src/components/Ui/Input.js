@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Input.module.css";
 
+
 const Input = () => {
   return (
     <input
@@ -8,6 +9,8 @@ const Input = () => {
       type="number"
       min="1"
       max="5"
+      step="1"
+      defaultValue="1"
     ></input>
   );
 };
