@@ -50,6 +50,7 @@
   color: var(--secondarytextcolor);
 }
 
+
 @media only screen and (min-width: 1400px) and (min-height: 900px) {
   .row {
     padding: 150px 0;
