@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./HeroThreeSection.module.css";
@@ -7,14 +7,24 @@ import TheButton from "../Ui/TheButton";
 import dish1 from "../../assets/image/dish1.png";
 import dish2 from "../../assets/image/dish2.png";
 import dish3 from "../../assets/image/dish3.png";
+import HeroThreeForm from "../SectionComponents/HeroThreeForm";
 
 const HeroThreeSection = () => {
-
+ 
+const onAddToCartHandler = (amount) =>
+{
+    
+}
 
 
   return (
     <section>
       <Container>
+
+
+
+
+
         <Row
           className={`${classes.row} mx-auto`}
           bdata-aos="fade-up"
@@ -29,6 +39,11 @@ const HeroThreeSection = () => {
           </Col>
         </Row>
         <Row className={classes.row_dish}>
+
+
+
+
+
           <Col
             lg={4}
             className={classes.dish_col}
@@ -45,13 +60,15 @@ const HeroThreeSection = () => {
               </div>
               <div className={classes.dish_price_div}>
                 <p className="my-auto">₦1200</p>
-                <Input />
-                <TheButton>
-                  <i className="bi bi-plus"></i> Add
-                </TheButton>
+               <HeroThreeForm onAddToCart={onAddToCartHandler}/>
               </div>
             </div>
           </Col>
+
+
+
+
+
           <Col
             lg={4}
             className={`${classes.dish_col} ${classes.dish_col_mid}`}
@@ -99,6 +116,11 @@ const HeroThreeSection = () => {
             </div>
           </Col>
         </Row>
+
+
+
+
+
         <Row>
           <Col
             lg={4}
@@ -170,6 +192,11 @@ const HeroThreeSection = () => {
             </div>
           </Col>
         </Row>
+
+
+
+
+
       </Container>
     </section>
   );
