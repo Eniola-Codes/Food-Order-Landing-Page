@@ -1,0 +1,43 @@
+.item
+{
+    padding: 20px 20px;
+}
+
+.buttons
+{
+    text-align: right;
+}
+
+.buttons .btn_style
+{
+   background-color: var(--light);
+   border: 1px solid var(--primaryitemcolor) ;
+   color : var(--primaryitemcolor);
+   transition: 0.3s;
+}
+
+.buttons .btn_style2
+{
+   border: 1px solid var(--primaryitemcolor) ;
+}
+
+.buttons .btn_style:hover
+{
+   background-color: var(--primaryitemcolor);
+   color : var(--light);
+}
+
+
+.amount
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount p
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+

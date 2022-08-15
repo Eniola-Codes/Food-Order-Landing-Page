@@ -1,5 +1,6 @@
 import React from "react";
 import NavCartButton from "./NavCartButton";
+import Cart from '../Cart/Cart'
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./TheNavbar.module.css";
@@ -7,6 +8,8 @@ import Logo from "../../assets/Logo/Logo.svg";
 
 const TheNavbar = () => {
   return (
+    <>
+        <Cart />
     <Navbar
       expand="xl"
       className={`${classes.navbar} fixed-top`}
@@ -53,6 +56,9 @@ const TheNavbar = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
+    </>
+
   );
 };
 
