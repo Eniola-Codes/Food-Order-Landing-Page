@@ -1,47 +1,39 @@
-.backdrop
-{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0);
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  opacity: 0;
+  z-index: 1100;
+  animation: backanime 0.7s ease-in-out 0s 1 forwards;
+}
+
+.modal {
+  width: 90%;
+  max-width: 700px;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -100px);
+  border-radius: 14px;
+  background-color: white;
+  z-index: 1110;
+  opacity: 0;
+  animation: modalanime 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes backanime {
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes modalanime {
+  50% {
     opacity: 0;
-    z-index: 1100;
-    animation: backanime 0.7s ease-in-out 0s 1 forwards ;
-}
-
-.modal
-{
-    width: 90%;
-    max-width: 700px;
-    position: fixed;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%,-100px);
-    border-radius: 14px;
-    background-color: white;
-    z-index: 1110;
-    opacity: 0;
-    animation: modalanime 1s ease-in-out 0s 1 forwards ;
-}
-
-@keyframes backanime
-{
-    100%
-    {
-        opacity: 0.7;
-    }
-}
-
-@keyframes modalanime
-{
-
-    50%
-    {
-        opacity: 0;
-    }
-    100%
-    {
-        transform: translate(-50%,0px);
-        opacity: 1;
-    }
+  }
+  100% {
+    transform: translate(-50%, 0px);
+    opacity: 1;
+  }
 }

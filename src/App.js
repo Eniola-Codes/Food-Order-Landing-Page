@@ -1,30 +1,28 @@
-import React,{ useState } from 'react';
-import './App.css';
-import TheNav from './components/Header/TheNav';
-import Sections from './components/Sections/Sections';
-import Cart from './components/Cart/Cart';
-import CartProvider from './components/store/CartProvider';
+import React, { useState } from "react";
+import "./App.css";
+import TheNav from "./components/Header/TheNav";
+import Sections from "./components/Sections/Sections";
+import Cart from "./components/Cart/Cart";
+import CartProvider from "./components/store/CartProvider";
 
 const App = () => {
-const [cartIsShown,setCartIsShown] = useState(false);
+  const [cartIsShown, setCartIsShown] = useState(false);
 
-  const onShowCartHandler = () =>
-  {
+  const onShowCartHandler = () => {
     setCartIsShown(true);
-  }
+  };
 
-  const onCloseCartHandler = () =>
-  {
+  const onCloseCartHandler = () => {
     setCartIsShown(false);
-  }
+  };
 
   return (
     <CartProvider>
-    {cartIsShown && <Cart onCloseCart={onCloseCartHandler}/>}
-      <TheNav onShowCart={onShowCartHandler}/>
-      <Sections/>
+      {cartIsShown && <Cart onCloseCart={onCloseCartHandler} />}
+      <TheNav onShowCart={onShowCartHandler} />
+      <Sections />
     </CartProvider>
   );
-}
+};
 
 export default App;

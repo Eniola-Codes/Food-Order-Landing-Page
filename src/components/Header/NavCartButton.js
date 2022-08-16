@@ -3,11 +3,11 @@ import classes from "./NavCartButton.module.css";
 import CartContext from "../store/cartcontext";
 
 const NavCartButton = (props) => {
- const cartCtx = useContext(CartContext);
+  const cartCtx = useContext(CartContext);
 
- const numberOfCartItems = cartCtx.items.reduce((curNumber,item) => {
-  return curNumber + item.amount;
- }, 3)
+  const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
+    return curNumber + item.amount;
+  }, 3);
 
   return (
     <div onClick={props.onClick} className={classes.cart__button}>
