@@ -1,10 +1,10 @@
 import React from "react";
 import TheNavbar from "./TheNavbar";
 
-const TheNav = () => {
+const TheNav = (props) => {
   return (
     <header>
-      <TheNavbar />
+      <TheNavbar onShowCart={props.onShowCart} />
     </header>
   );
 };

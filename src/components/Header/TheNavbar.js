@@ -1,15 +1,13 @@
 import React from "react";
 import NavCartButton from "./NavCartButton";
-import Cart from '../Cart/Cart'
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./TheNavbar.module.css";
 import Logo from "../../assets/Logo/Logo.svg";
 
-const TheNavbar = () => {
+const TheNavbar = (props) => {
   return (
     <>
-        <Cart />
     <Navbar
       expand="xl"
       className={`${classes.navbar} fixed-top`}
@@ -51,7 +49,7 @@ const TheNavbar = () => {
             Contact Us
           </Nav.Link>
           <Nav.Link href="#buttons" className={`${classes.nav__link}`}>
-            <NavCartButton />
+            <NavCartButton onClick={props.onShowCart}/>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

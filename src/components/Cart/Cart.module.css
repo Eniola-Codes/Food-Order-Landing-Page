@@ -1,6 +1,95 @@
+.items
+{
+    padding: 0px 20px 20px 20px;
+}
+
+.items .item_group
+{
+max-height: 300px;
+overflow: auto;
+}
+
 .item
 {
-    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 3px solid var(--primaryitemcolor);
+}
+
+.item .item_content
+{
+    display: flex;
+}
+
+.item .item_value
+{
+    margin: auto;
+    margin-left: 20px;
+}
+
+.item .item_name_div
+{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item .item_info_div
+{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.item .item_info_div p:first-child
+{
+    color: var(--primaryitemcolor);
+}
+
+.item .item_info_div p:last-child
+{
+  margin-left: 50px;
+  border: 1px solid var(--secondarybordercolor);
+  border-radius: 5px ;
+  padding: 5px 10px;
+}
+
+
+.item .item_image
+{
+    width: 150px;
+    height: auto;
+}
+
+.item .item_buttons
+{
+    display: flex;
+    align-items: center;
+    font-size:20px;
+    margin-right: 20px;
+}
+
+.item .item_buttons div
+{
+    padding: 0px 8px;
+    border-radius: 5px;
+    border: 2px solid var(--primaryitemcolor);
+    color: var(--primaryitemcolor);
+    font-weight: 900;
+    transition: 0.3s;
+    cursor : pointer;
+}
+
+.item .item_buttons div:first-child
+{
+    margin-right: 10px;
+}
+
+.item .item_buttons div:hover
+{
+    background-color: var(--primaryitemcolor);
+    color: var(--light);
 }
 
 .buttons
@@ -27,9 +116,9 @@
    color : var(--light);
 }
 
-
 .amount
 {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,4 +129,59 @@
     font-weight: 700;
 }
 
+.items ::-webkit-scrollbar
+{
+    background-color: var(--light);
+    width: 8px;
+}
 
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--secondarybordercolor);
+    border-radius: 10px ;
+}
+
+@media only screen and (max-width: 576px)
+{
+
+.item .item_image
+{
+   display: none;
+}
+
+.item .item_buttons
+{
+    display: block;
+    margin-right: 10px;
+}
+
+.item .item_buttons div:first-child,
+.item .item_buttons div:nth-child(2)
+{
+    margin-top: 10px;
+}
+
+
+.item .item_buttons div:first-child
+{
+    margin-right: 0;
+}
+
+.item .item_name_div
+{
+    font-size: 20px;
+}
+
+.item
+{
+    padding: 20px 0;
+}
+
+.amount p
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+}

@@ -22,7 +22,7 @@ const dummyList = [
   {
     id: "d2",
     src: dish2,
-    name: "Jellof rice and chicken",
+    name: "Jollof rice and chicken",
     price: " 3500",
   },
 
