@@ -24,8 +24,8 @@ const HeroThreeForm = (props) => {
             props.onAddToCart(enteredAmountNumber);
     }
 
-  return (
-    <form onSubmit={onSubmitHandler}>
+  return ( 
+  <form onSubmit={onSubmitHandler}>
       <Input
         ref={inputRef}
         input={{

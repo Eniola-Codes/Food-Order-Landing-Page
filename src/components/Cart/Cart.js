@@ -1,107 +1,45 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartItem from "./CartItem";
 import Modal from "../Ui/Modal";
 import TheButton from "../Ui/TheButton";
 import classes from "./Cart.module.css";
-import dish1 from "../../assets/image/dish1.png";
-import dish3 from "../../assets/image/dish3.png";
-import dish5 from "../../assets/image/dish5.png";
+import CartContext from "../store/cartcontext";
 
 const Cart = (props) => {
+  const cartCtx = useContext(CartContext);
+
+  const totalAmount = `₦${cartCtx.totalAmount.toFixed(2)}`;
+  const hasItems = cartCtx.items.length > 0;
+
+  // const onAddHandler = (item) => {
+  //   cartCtx.addItem({ ...item, amount: 1 });
+  // };
+
+  // const onRemoveHandler = (id) => {
+  //   cartCtx.removeItem(id);
+  // };
+
+  // cartCtx.items.map((item) => (
+  //   <CartItem
+  //     name={item.name}
+  //     amount={item.amount}
+  //     price={item.price}
+  //     key={item.id}
+  //     onAdd={onAddHandler.bind(null,item)}
+  //     onRemove={onRemoveHandler.bind(null, item.id)}
+  //   />
+  // ));
+
   return (
     <Modal onCloseCart={props.onCloseCart}>
       <div className={classes.items}>
         <div className={classes.item_group}>
-          <div className={classes.item}>
-            <div className={classes.item_content}>
-              <div className={classes.item_img_div}>
-                <img
-                  className={classes.item_image}
-                  src={dish1}
-                  alt="food"
-                ></img>
-              </div>
-              <div className={classes.item_value}>
-                <div className={classes.item_name_div}>
-                  <p>Yam and egg sauce</p>
-                </div>
-                <div className={classes.item_info_div}>
-                  <p>₦1500</p>
-                  <p>x 1</p>
-                </div>
-              </div>
-            </div>
-            <div className={classes.item_buttons}>
-              <div>
-                <i className="bi bi-dash"></i>
-              </div>
-              <div>
-                <i className="bi bi-plus"></i>
-              </div>
-            </div>
-          </div>
-
-          <div className={classes.item}>
-            <div className={classes.item_content}>
-              <div className={classes.item_img_div}>
-                <img
-                  className={classes.item_image}
-                  src={dish3}
-                  alt="food"
-                ></img>
-              </div>
-              <div className={classes.item_value}>
-                <div className={classes.item_name_div}>
-                  <p>Porridge beans</p>
-                </div>
-                <div className={classes.item_info_div}>
-                  <p>₦2000</p>
-                  <p>x 5</p>
-                </div>
-              </div>
-            </div>
-            <div className={classes.item_buttons}>
-              <div>
-                <i className="bi bi-dash"></i>
-              </div>
-              <div>
-                <i className="bi bi-plus"></i>
-              </div>
-            </div>
-          </div>
-
-          <div className={classes.item}>
-            <div className={classes.item_content}>
-              <div className={classes.item_img_div}>
-                <img
-                  className={classes.item_image}
-                  src={dish5}
-                  alt="food"
-                ></img>
-              </div>
-              <div className={classes.item_value}>
-                <div className={classes.item_name_div}>
-                  <p>Amala and ewedu</p>
-                </div>
-                <div className={classes.item_info_div}>
-                  <p>₦7000</p>
-                  <p>x 2</p>
-                </div>
-              </div>
-            </div>
-            <div className={classes.item_buttons}>
-              <div>
-                <i className="bi bi-dash"></i>
-              </div>
-              <div>
-                <i className="bi bi-plus"></i>
-              </div>
-            </div>
-          </div>
+          {/* <CartItem /> */}
         </div>
 
         <div className={`${classes.amount} `}>
           <p>Total Amount</p>
-          <p>₦25500.00</p>
+          <p>{totalAmount}</p>
         </div>
         <div className={classes.buttons}>
           <TheButton
@@ -110,7 +48,9 @@ const Cart = (props) => {
           >
             Close
           </TheButton>
-          <TheButton className={classes.btn_style2}>Order</TheButton>
+          {hasItems && (
+            <TheButton className={classes.btn_style2}>Order</TheButton>
+          )}
         </div>
       </div>
     </Modal>
