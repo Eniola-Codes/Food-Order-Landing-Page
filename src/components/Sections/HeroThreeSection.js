@@ -11,55 +11,55 @@ import dish6 from "../../assets/image/dish6.png";
 
 import HeroThreeContent from "../SectionComponents/HeroThreeContent";
 
-const dummyList = [
+const dummyListone = [
   {
     id: "d1",
     src: dish1,
     name: "Yam and egg sauce",
-    price: "1500",
+    price: 1500,
   },
 
   {
     id: "d2",
     src: dish2,
     name: "Jollof rice and chicken",
-    price: " 3500",
+    price: 3500,
   },
 
   {
     id: "d3",
     src: dish3,
     name: "Porridge beans",
-    price: "2000",
+    price: 2000,
   },
 ];
 
-const dummyList2 = [
+const dummyListtwo = [
   {
     id: "d4",
     src: dish4,
     name: "Semo and egusi soup",
-    price: "5000",
+    price: 5000,
   },
 
   {
     id: "d5",
     src: dish5,
     name: "Amala and ewedu soup",
-    price: "7000",
+    price: 7000.0000,
   },
 
   {
     id: "d6",
     src: dish6,
     name: "Eba and okra soup",
-    price: "3000",
+    price: 3000.000,
   },
 ];
 
 const HeroThreeSection = () => {
 
-  const dishList1 = dummyList.map((dish) => (
+  const dishList1 = dummyListone.map((dish) => (
     <Col
       lg={4}
       className={classes.dish_col}
@@ -69,6 +69,7 @@ const HeroThreeSection = () => {
     >
       <HeroThreeContent
         key={dish.id}
+        id={dish.id}
         name={dish.name}
         src={dish.src}
         price={dish.price}
@@ -76,7 +77,7 @@ const HeroThreeSection = () => {
    </Col>
   ));
 
-  const dishList2 = dummyList2.map((dish) => (
+  const dishList2 = dummyListtwo.map((dish) => (
     <Col
       lg={4}
       className={classes.dish_col}
@@ -86,6 +87,7 @@ const HeroThreeSection = () => {
     >
       <HeroThreeContent
         key={dish.id}
+        id={dish.id}
         name={dish.name}
         src={dish.src}
         price={dish.price}

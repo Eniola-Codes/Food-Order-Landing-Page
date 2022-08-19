@@ -13,7 +13,7 @@ const CartItem = (props) =>
             <div className={classes.item_img_div}>
               <img
                 className={classes.item_image}
-                src={props.image}
+                src={props.src}
                 alt="food"
               ></img>
             </div>
@@ -36,7 +36,6 @@ const CartItem = (props) =>
             </div>
           </div>
         </div>
-
         </>
     )
 }

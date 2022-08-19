@@ -7,7 +7,7 @@ const NavCartButton = (props) => {
 
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
     return curNumber + item.amount;
-  }, 3);
+  }, 0);
 
   return (
     <div onClick={props.onClick} className={classes.cart__button}>

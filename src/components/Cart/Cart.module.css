@@ -39,13 +39,13 @@
 }
 
 .items ::-webkit-scrollbar {
-  background-color: var(--light);
-  width: 8px;
+  background-color: var(--light) !important;
+  width: 8px !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--secondarybordercolor);
-  border-radius: 10px;
+  background-color: var(--secondarybordercolor) !important;
+  border-radius: 10px !important;
 }
 
 @media only screen and (max-width: 576px) {

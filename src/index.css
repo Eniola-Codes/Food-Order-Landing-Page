@@ -28,3 +28,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ ::-webkit-scrollbar
+{ 
+   background-color: #F1F1F1; 
+   width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: var(--primaryitemcolor) !important;
+}
+ 

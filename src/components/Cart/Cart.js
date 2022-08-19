@@ -5,36 +5,40 @@ import TheButton from "../Ui/TheButton";
 import classes from "./Cart.module.css";
 import CartContext from "../store/cartcontext";
 
+
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `₦${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  // const onAddHandler = (item) => {
-  //   cartCtx.addItem({ ...item, amount: 1 });
-  // };
+  const onAddHandler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1 });
+  };
 
-  // const onRemoveHandler = (id) => {
-  //   cartCtx.removeItem(id);
-  // };
+  const onRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
 
-  // cartCtx.items.map((item) => (
-  //   <CartItem
-  //     name={item.name}
-  //     amount={item.amount}
-  //     price={item.price}
-  //     key={item.id}
-  //     onAdd={onAddHandler.bind(null,item)}
-  //     onRemove={onRemoveHandler.bind(null, item.id)}
-  //   />
-  // ));
+ const cartItems = 
+   
+      cartCtx.items.map((item) => (
+    <CartItem
+      name={item.name}
+      amount={item.amount}
+      price={item.price}
+      key={item.id}
+      src={item.src}
+      onAdd={onAddHandler.bind(null,item)}
+      onRemove={onRemoveHandler.bind(null, item.id)}
+    />
+ ));
 
   return (
     <Modal onCloseCart={props.onCloseCart}>
       <div className={classes.items}>
         <div className={classes.item_group}>
-          {/* <CartItem /> */}
+          {cartItems}
         </div>
 
         <div className={`${classes.amount} `}>
