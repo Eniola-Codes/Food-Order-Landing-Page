@@ -3,15 +3,23 @@ import Input from "../Ui/Input";
 import TheButton from "../Ui/TheButton";
 
 const HeroThreeForm = (props) => {
+  //using useRef and useState hooks
   const inputRef = useRef();
   const [amountIsValid, setAmountIsValid] = useState(true);
+  //END
 
+  //Handling user data amount submission
   const onSubmitHandler = (event) => {
+    //Prevent server side handling of inputted data
     event.preventDefault();
+    //END
 
+    //Accepting data using useref, converting the data into a string,
     const enteredAmount = inputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
+    //END
 
+    //Checking and ensuring accepted data is between 1 to 5
     if (
       enteredAmount.trim().length === 0 ||
       enteredAmountNumber < 1 ||
@@ -20,11 +28,15 @@ const HeroThreeForm = (props) => {
       setAmountIsValid(false);
       return;
     }
-    console.log(enteredAmountNumber);
+    //END
 
+    //Passing accepted data to the HeroThreeSection component via prop
     props.onAddToCart(enteredAmountNumber);
+    //END
   };
+  //END
 
+  //Layout and structure of form to be passed to the HeroThreeSection component
   return (
     <form onSubmit={onSubmitHandler}>
       <Input
@@ -41,11 +53,14 @@ const HeroThreeForm = (props) => {
       <TheButton type="submit">
         <i className="bi bi-plus"></i> Add
       </TheButton>
+      {/*Error message to be displayed on incorrect user input */}
       {!amountIsValid && (
         <p>Input is invalid, Pleae Input a amount between 1 and 5</p>
       )}
+      {/*END */}
     </form>
   );
 };
+//END
 
 export default HeroThreeForm;

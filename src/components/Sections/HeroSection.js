@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FoodImage from "../../assets/image/FoodImage.webp";
 
 const HeroSection = () => {
+  //Rendering the Hero section(Landing page) on the DOM
   return (
     <section>
       <Container>
@@ -67,6 +68,7 @@ const HeroSection = () => {
       </Container>
     </section>
   );
+  //END
 };
 
 export default HeroSection;

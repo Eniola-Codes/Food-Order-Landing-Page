@@ -8,9 +8,9 @@ import dish3 from "../../assets/image/dish3.png";
 import dish4 from "../../assets/image/dish4.png";
 import dish5 from "../../assets/image/dish5.png";
 import dish6 from "../../assets/image/dish6.png";
-
 import HeroThreeContent from "../SectionComponents/HeroThreeContent";
 
+//Data objects to be used in the HeroThree section for rendering dishes information
 const dummyListone = [
   {
     id: "d1",
@@ -56,9 +56,11 @@ const dummyListtwo = [
     price: 3000.000,
   },
 ];
+//END
 
 const HeroThreeSection = () => {
 
+  //Mapping the data from the object above and storing them in a variable
   const dishList1 = dummyListone.map((dish) => (
     <Col
       lg={4}
@@ -94,10 +96,10 @@ const HeroThreeSection = () => {
       />
    </Col>
   ));
+//END
 
 
-
-
+//Rendering the Hero Three section
   return (
     <section>
       <Container>
@@ -127,6 +129,7 @@ const HeroThreeSection = () => {
       </Container>
     </section>
   );
+  //END
 };
 
 export default HeroThreeSection;

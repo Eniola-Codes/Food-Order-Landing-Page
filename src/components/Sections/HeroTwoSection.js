@@ -7,6 +7,7 @@ import deliveryimg from "../../assets/Icon/delivery-man.svg";
 import topimg from "../../assets/Icon/top-food.svg";
 
 const HeroTwoSection = () => {
+  //Rendering the HeroTwo section
   return (
     <Container>
       <Row
@@ -97,6 +98,7 @@ const HeroTwoSection = () => {
       </Row>
     </Container>
   );
+  //END
 };
 
 export default HeroTwoSection;

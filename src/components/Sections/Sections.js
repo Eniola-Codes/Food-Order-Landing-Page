@@ -5,6 +5,7 @@ import HeroThreeSection from "./HeroThreeSection";
 import HeroFourSection from "./HeroFourSection";
 
 const Sections = () => {
+  //Rendering every of the section components
   return (
     <main>
       <HeroSection />
@@ -13,6 +14,7 @@ const Sections = () => {
       <HeroFourSection />
     </main>
   );
+  //END
 };
 
 export default Sections;

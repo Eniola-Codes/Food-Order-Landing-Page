@@ -6,6 +6,8 @@ import classes from "./TheNavbar.module.css";
 import Logo from "../../assets/Logo/Logo.svg";
 
 const TheNavbar = (props) => {
+
+  //Layout and structure of the navbar to be passed to THENAV component
   return (
     <>
       <Navbar
@@ -59,6 +61,7 @@ const TheNavbar = (props) => {
       </Navbar>
     </>
   );
+  //ENDS
 };
 
 export default TheNavbar;

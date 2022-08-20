@@ -6,8 +6,11 @@ import Cart from "./components/Cart/Cart";
 import CartProvider from "./components/store/CartProvider";
 
 const App = () => {
+  //Using useState hook
   const [cartIsShown, setCartIsShown] = useState(false);
+  //END
 
+  //Managing the state of the cart component using useState
   const onShowCartHandler = () => {
     setCartIsShown(true);
   };
@@ -15,7 +18,9 @@ const App = () => {
   const onCloseCartHandler = () => {
     setCartIsShown(false);
   };
+//END
 
+//Rendering the cart and all the sections
   return (
     <CartProvider>
       {cartIsShown && <Cart onCloseCart={onCloseCartHandler} />}
@@ -23,6 +28,7 @@ const App = () => {
       <Sections />
     </CartProvider>
   );
+  //END
 };
 
 export default App;
