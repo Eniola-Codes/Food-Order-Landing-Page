@@ -20,6 +20,7 @@
 
 .row_cards {
   max-width: 1200px;
+  margin: auto;
   padding: 50px 0;
   background-color: rgb(255, 233, 224, 0.6);
 }

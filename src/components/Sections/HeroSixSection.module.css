@@ -1,0 +1,82 @@
+.row {
+    padding: 100px 0 30px 0;
+    max-width: 1200px;
+  }
+
+  .row_content
+  {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .header_div {
+    text-align: center;
+  }
+  
+  .header_div h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primaryitemcolor);
+  }
+  
+  .header_div p {
+    color: var(--textcolor);
+    font-size: 20px;
+  }
+
+  .text_location
+  {
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: 991px)
+  {
+  
+  
+  .text_header
+  {
+    font-size: 36px;
+  }
+  
+  .text_content
+  {
+    font-size: 20px;
+  }
+  
+  .row {
+    padding: 100px 0 0px 0;
+    }
+
+    .text_div
+    {
+      margin-top: 30px;
+    }
+    
+  }
+  
+    @media only screen and (max-width: 576px) {
+      .header_div h2 {
+        font-size: 36px;
+      }
+    
+      .header_div p {
+        font-size: 16px;
+      }
+  
+      .download_badge
+  {
+      width: 110px;
+  }
+  
+  .download_badge2
+  {
+      width: 135px;
+  }
+  
+  .action_div
+  {
+      text-align: center;
+  }
+  
+    }
+  

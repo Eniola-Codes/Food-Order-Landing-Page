@@ -43,7 +43,7 @@
   width: 8px !important;
 }
 
-::-webkit-scrollbar-thumb {
+.items ::-webkit-scrollbar-thumb {
   background-color: var(--secondarybordercolor) !important;
   border-radius: 10px !important;
 }

@@ -2,3 +2,62 @@
   padding: 100px 0 50px 0;
   max-width: 1200px;
 }
+
+.text_div
+{
+  padding-right: 10%;
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
+}
+
+
+.text_header
+{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text_content
+{
+  font-size: 24px;
+}
+
+.image_div
+{
+  width: 80%;
+  margin-left: auto;
+}
+
+.image{
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px)
+{
+
+  .text_div
+{
+  padding-right: 0;
+  position: static;
+  transform: translateY(0);
+}
+
+.image_div
+{
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.text_header
+{
+  font-size: 36px;
+}
+
+.text_content
+{
+  font-size: 20px;
+}
+
+}
