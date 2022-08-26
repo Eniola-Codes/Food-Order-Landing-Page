@@ -4,7 +4,8 @@
 
   .row_content {
     max-width: 1200px;
-    padding: 0 0 100px 0;
+    padding: 0 0 150px 0;
+    margin: auto;
   }
 
   .header_div {
@@ -73,5 +74,10 @@
     {
       width: 110px;
     }
+
+    .row_content {
+        padding: 0 0 100px 0;
+      }
+    
 
   }

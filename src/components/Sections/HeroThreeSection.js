@@ -2,12 +2,12 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./HeroThreeSection.module.css";
-import dish1 from "../../assets/image/dish1.png";
-import dish2 from "../../assets/image/dish2.png";
-import dish3 from "../../assets/image/dish3.png";
-import dish4 from "../../assets/image/dish4.png";
-import dish5 from "../../assets/image/dish5.png";
-import dish6 from "../../assets/image/dish6.png";
+import dish1 from "../../assets/image/dish1.webp";
+import dish2 from "../../assets/image/dish2.webp";
+import dish3 from "../../assets/image/dish3.webp";
+import dish4 from "../../assets/image/dish4.webp";
+import dish5 from "../../assets/image/dish5.webp";
+import dish6 from "../../assets/image/dish6.webp";
 import HeroThreeContent from "../SectionComponents/HeroThreeContent";
 
 //Data objects to be used in the HeroThree section for rendering dishes information
@@ -101,7 +101,7 @@ const HeroThreeSection = () => {
 
 //Rendering the Hero Three section
   return (
-    <section>
+    <section id='dishes'>
       <Container>
         <Row
           className={`${classes.row} mx-auto`}

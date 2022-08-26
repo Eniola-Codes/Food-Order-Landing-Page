@@ -10,6 +10,7 @@ const HeroSevenSection = () =>
 {
 
     return (
+        <section id='subscribe'>
         <Container>
             <Row className={classes.row}>
                 <Col xs={12}>
@@ -26,6 +27,7 @@ const HeroSevenSection = () =>
             </div>
             </Row>
         </Container>
+        </section>
     )
 }
 

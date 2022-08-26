@@ -3,11 +3,12 @@ import { Row, Container, Col } from "react-bootstrap";
 import TheButton from "../Ui/TheButton";
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from "./HeroFourSection.module.css";
-import aboutImage from '../../assets/image/about-image.png';
+import aboutImage from '../../assets/image/about-image.webp';
 
 const HeroFourSection = () => {
   //Rendering hero for section (currently building this)
   return (
+    <section id='about'>
     <Container>
       <Row className={`${classes.row} mx-auto`}>
           <Col lg={6}>
@@ -31,6 +32,7 @@ const HeroFourSection = () => {
           </Col>
       </Row>
     </Container>
+    </section>
   );
   //END
 };

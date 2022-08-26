@@ -9,6 +9,7 @@ import topimg from "../../assets/Icon/top-food.svg";
 const HeroTwoSection = () => {
   //Rendering the HeroTwo section
   return (
+    <section id='why'>
     <Container>
       <Row
         className={`${classes.row} mx-auto`}
@@ -97,6 +98,7 @@ const HeroTwoSection = () => {
         </Col>
       </Row>
     </Container>
+    </section>
   );
   //END
 };

@@ -8,7 +8,7 @@ import FoodImage from "../../assets/image/FoodImage.webp";
 const HeroSection = () => {
   //Rendering the Hero section(Landing page) on the DOM
   return (
-    <section>
+    <section id='hero'>
       <Container>
         <Row className={`${classes.row} mx-auto`}>
           <Col

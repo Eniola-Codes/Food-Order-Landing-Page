@@ -6,6 +6,7 @@ const HeroSixSection = () =>
 {
     
     return (
+        <section id='testimonials'>
         <Container>
         <Row
           className={`${classes.row} mx-auto`}
@@ -22,7 +23,7 @@ const HeroSixSection = () =>
         </Row>
 
         <Row className={classes.row_content}>
-            
+
         <Col lg={4}>
                 <div className={`${classes.text_div} px-2`}>
                     <h4 className={classes.header_text}>Paul James</h4>
@@ -51,7 +52,7 @@ const HeroSixSection = () =>
         </Col>
         </Row>
         </Container>
-
+        </section>
 
     )
 }

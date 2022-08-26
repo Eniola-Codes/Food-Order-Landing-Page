@@ -1,6 +1,5 @@
 .row {
     padding: 100px 0 50px 0;
-    max-width: 1200px;
   }
 
   .row_content {
@@ -85,8 +84,7 @@
 }
 
 .row {
-    padding: 100px 0 20px 0;
-    max-width: 1200px;
+    padding: 50px 0 30px 0;
   }
 }
 

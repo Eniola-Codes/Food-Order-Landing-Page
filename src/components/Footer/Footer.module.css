@@ -1,0 +1,121 @@
+.footer_bg {
+  background-color: var(--bordercolor);
+}
+
+.row {
+  padding: 75px 0 75px 0;
+  margin: auto;
+  color: var(--light);
+}
+
+.content_div
+{
+    margin-top: 20px;
+    padding-right: 20%;
+}
+
+.mobile_copy
+{
+    margin-top: 50px;
+    text-align: center;
+    display: none;
+}
+
+.about p
+{
+    cursor: pointer;
+    transition : 0.3s;
+    margin-top: 10px;
+}
+
+.about p:hover
+{
+    color: var(--primaryitemcolor)
+}
+
+.social
+{
+text-align: center;    
+}
+
+.social p
+{
+    cursor: pointer;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.social p:hover
+{
+    background-color: var(--primaryitemcolor);
+}
+
+.social_icon
+{
+    padding: 10px;
+}
+
+.navbar_brand
+{
+    cursor: pointer;
+}
+
+.eniola_codes
+{
+    color: var(--light);
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+    font-weight: 18px;
+}
+
+.eniola_codes:hover
+{
+    color: var(--primaryitemcolor);
+}
+.content_div i,
+.mobile_copy i
+{
+    color: #E81224;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 991px)
+{
+    .content_div p:nth-child(2)
+{
+    display: none;
+}
+
+.about
+{
+    margin-top: 20px;
+}
+
+.social
+{
+text-align: left;   
+margin-top: 20px;
+
+}
+
+.mobile_copy
+{
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+}
+
+.social p
+{
+    margin: 10px 0 0;
+
+}
+
+}

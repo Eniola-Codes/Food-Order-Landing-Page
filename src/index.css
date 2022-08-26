@@ -41,3 +41,8 @@ body {
   border-radius: 10px !important;
 }
  
+::selection
+{
+  background-color: var(--primaryitemcolor);
+  color: var(--light);
+}

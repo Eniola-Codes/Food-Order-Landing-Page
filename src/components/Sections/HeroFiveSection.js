@@ -2,7 +2,7 @@ import React from 'react';
 import { Container , Row, Col} from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import classes from './HeroFiveSection.module.css';
-import mobileImage from '../../assets/image/mobile.png';
+import mobileImage from '../../assets/image/mobile.webp';
 import playStore from '../../assets/image/playstore.png';
 import appStore from '../../assets/image/appstore.png';
 
@@ -10,6 +10,7 @@ import appStore from '../../assets/image/appstore.png';
 const HeroFiveSection = () =>
 {
     return (
+        <section id='mobile-app'>
         <Container>
       <Row
         className={`${classes.row} mx-auto`}
@@ -46,6 +47,7 @@ const HeroFiveSection = () =>
       </Row>
 
       </Container>
+      </section>
     )
 }
 
