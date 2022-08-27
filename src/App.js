@@ -4,7 +4,6 @@ import Sections from "./components/Sections/Sections";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./components/store/CartProvider";
 import TheFooter from "./components/Footer/TheFooter";
-import Tooltip from "./components/Ui/Tooltip";
 import Swal from "sweetalert2";
 
 const App = () => {
