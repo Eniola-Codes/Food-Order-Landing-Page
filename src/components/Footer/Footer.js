@@ -20,19 +20,19 @@ const Footer = () => {
                   to="hero"
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-50}
                   duration={500}
                 >
                   <img
                     className={classes.navbar_brand}
                     src={Logo}
                     alt="logo"
-                  ></img>{" "}
+                  ></img>
                 </Link>
               </div>
               <div className={classes.content_div}>
                 <p>
-                  Solution for easy and flexible house hunting.You can trust us
+                  Solution for easy and flexible getting meals for the household.You can trust us
                   anywhere through this platform
                 </p>
                 <p>&copy;2022 Made with <i className="bi bi-heart-fill"></i> by&nbsp;

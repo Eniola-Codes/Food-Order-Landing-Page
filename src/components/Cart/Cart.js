@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext} from "react";
 import CartItem from "./CartItem";
 import Modal from "../Ui/Modal";
 import TheButton from "../Ui/TheButton";
@@ -6,6 +6,7 @@ import classes from "./Cart.module.css";
 import CartContext from "../store/cartcontext";
 
 const Cart = (props) => {
+
   // Using useContext hooks
   const cartCtx = useContext(CartContext);
   // ENDS
@@ -36,7 +37,7 @@ const Cart = (props) => {
 
   //Revceiving values via props and mapping it using useContext
 
-  const cartItems = cartCtx.items.map((item) => (
+  var cartItems = cartCtx.items.map((item) => (
     <CartItem
       name={item.name}
       amount={item.amount}
@@ -51,9 +52,9 @@ const Cart = (props) => {
   //ENDS
 
   // Rendering the Cart using the modal component
-
+  
   return (
-    <Modal onCloseCart={props.onCloseCart}>
+<Modal onCloseCart={props.onCloseCart}>
       <div className={classes.items}>
         <div className={classes.item_group}>{cartItems}</div>
 
@@ -62,7 +63,7 @@ const Cart = (props) => {
           <p>{totalAmount}</p>
         </div>
         <div className={classes.buttons}>
-          <TheButton
+         <TheButton
             onClick={props.onCloseCart}
             className={` ${classes.btn_style} me-2`}
           >
@@ -70,12 +71,12 @@ const Cart = (props) => {
           </TheButton>
           {/* Hiding the order button if there is no item in the cart using the hasitems variable as a condition */}
           {hasItems && (
-            <TheButton className={classes.btn_style2}>Order</TheButton>
+            <TheButton className={classes.btn_style2} onClick={props.onOrder}>Order</TheButton>
           )}
           {/* ENDS */}
         </div>
       </div>
-    </Modal>
+    </Modal> 
   );
 };
 

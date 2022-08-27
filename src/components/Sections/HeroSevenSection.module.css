@@ -40,7 +40,7 @@
 
   .button
   {
-    padding: 13px;
+    padding: 13px 0;
   }
 
   @media only screen and (max-width: 767px)
@@ -72,7 +72,7 @@
   
     .button
     {
-      width: 110px;
+      width: 100px;
     }
 
     .row_content {

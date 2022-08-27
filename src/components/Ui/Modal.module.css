@@ -17,7 +17,7 @@
   transform: translate(-50%, -100px);
   border-radius: 14px;
   background-color: white;
-  z-index: 1110;
+  z-index: 1100;
   opacity: 0;
   animation: modalanime 1s ease-in-out 0s 1 forwards;
 }

@@ -43,6 +43,7 @@
   color: var(--primaryitemcolor);
 }
 
+
 @media only screen and (max-width: 1200px) {
   .navbar {
     padding: 7px 1rem;

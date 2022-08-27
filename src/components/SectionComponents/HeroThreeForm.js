@@ -1,11 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Input from "../Ui/Input";
 import TheButton from "../Ui/TheButton";
+import Tooltip from "../Ui/Tooltip";
 
 const HeroThreeForm = (props) => {
   //using useRef and useState hooks
   const inputRef = useRef();
   const [amountIsValid, setAmountIsValid] = useState(true);
+  const [showTooltip, setShowTooltip] = useState(false);
   //END
 
   //Handling user data amount submission
@@ -36,8 +38,31 @@ const HeroThreeForm = (props) => {
   };
   //END
 
+  const ontooltipHandler = () =>
+  {
+      setShowTooltip(true);
+  }
+
+  useEffect(() => {
+    if(showTooltip === false)
+    {
+      return;
+    }
+
+    const bumpTimer = setTimeout(() => {
+      setShowTooltip(false);
+    }, 300);
+
+    return () => {
+      clearTimeout(bumpTimer);
+    };
+
+  }, [])
+
   //Layout and structure of form to be passed to the HeroThreeSection component
   return (
+    <>
+   {showTooltip && <Tooltip />}
     <form onSubmit={onSubmitHandler}>
       <Input
         ref={inputRef}
@@ -50,7 +75,7 @@ const HeroThreeForm = (props) => {
           defaultValue: "1",
         }}
       />
-      <TheButton type="submit">
+      <TheButton type="submit" onClick={ontooltipHandler}>
         <i className="bi bi-plus"></i> Add
       </TheButton>
       {/*Error message to be displayed on incorrect user input */}
@@ -59,6 +84,7 @@ const HeroThreeForm = (props) => {
       )}
       {/*END */}
     </form>
+    </>
   );
 };
 //END

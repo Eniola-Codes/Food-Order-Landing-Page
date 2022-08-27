@@ -2,13 +2,14 @@ import React from "react";
 import TheButton from "../Ui/TheButton";
 import classes from "./HeroSection.module.css";
 import { Row, Col, Container } from "react-bootstrap";
+import { Link } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FoodImage from "../../assets/image/FoodImage.webp";
 
 const HeroSection = () => {
   //Rendering the Hero section(Landing page) on the DOM
   return (
-    <section id='hero'>
+    <section id="hero">
       <Container>
         <Row className={`${classes.row} mx-auto`}>
           <Col
@@ -23,10 +24,22 @@ const HeroSection = () => {
                 Enjoy <span>home made meals</span> far away from home
               </h1>
               <p>
-                Helping you enjoy comfortable and health food anywhere and
+                Helping you enjoy comfortable and healthy food anywhere and
                 anytime on the go
               </p>
-              <TheButton>Order now</TheButton>
+              
+                <Link
+                className={classes.order_button}
+                  to="dishes"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                >
+                  <TheButton>
+                  Order Now
+                  </TheButton>
+                </Link>
             </div>
           </Col>
           <Col lg={6} className="p-0">

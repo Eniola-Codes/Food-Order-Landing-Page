@@ -18,7 +18,7 @@ const HeroFiveSection = () =>
         data-aos-easing="ease-out"
         data-aos-duration="700"
       >
-        <Col sm={12}>
+        <Col xs={12}>
           <div className={classes.header_div}>
             <h2>Get our mobile app</h2>
             <p>Enjoy better experience</p>
@@ -27,7 +27,9 @@ const HeroFiveSection = () =>
       </Row>
 
       <Row className={`${classes.row_content} mx-auto`}>
-          <Col lg={6}>
+          <Col lg={6} data-aos="fade-right"
+        data-aos-easing="ease-out"
+        data-aos-duration="700">
               <div className={classes.text_div}>
                   <p className={classes.text_content}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames ut dictumst urna, lorem nibh. Pretium leo hendrerit interdum netusLorem ipsum dolor sit amet.<b/> Consectetur adipiscing elit. Fames ut dictumst urna, lorem nibh. Pretium leo hendrerit interdum netus. Fames ut dictumst urna, lorem nibh.
@@ -39,7 +41,9 @@ const HeroFiveSection = () =>
                   </div>
               </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} data-aos="fade-left"
+        data-aos-easing="ease-out"
+        data-aos-duration="700">
             <div className={classes.image_div}>
             <img className={classes.image} src={mobileImage} alt='about'></img>
             </div>

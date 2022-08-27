@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./App.css";
 import TheNav from "./components/Header/TheNav";
 import Sections from "./components/Sections/Sections";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./components/store/CartProvider";
 import TheFooter from "./components/Footer/TheFooter";
+import Tooltip from "./components/Ui/Tooltip";
+import Swal from "sweetalert2";
 
 const App = () => {
   //Using useState hook
@@ -19,14 +20,29 @@ const App = () => {
   const onCloseCartHandler = () => {
     setCartIsShown(false);
   };
+
+  const onOrderHandler = () => {
+
+    setCartIsShown(false);
+
+        Swal.fire({
+      title: "Successful!",
+      text: "Your order is on the way",
+      icon: "success",
+    })
+
+
+  };
+
+
 //END
 
 //Rendering the cart and all the sections
   return (
     <CartProvider>
-      {cartIsShown && <Cart onCloseCart={onCloseCartHandler} />}
+      {cartIsShown && <Cart onCloseCart={onCloseCartHandler} onOrder={onOrderHandler}/>}
       <TheNav onShowCart={onShowCartHandler} />
-      <Sections />
+      <Sections/>
       <TheFooter/>
     </CartProvider>
   );

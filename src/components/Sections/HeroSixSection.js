@@ -14,7 +14,7 @@ const HeroSixSection = () =>
           data-aos-easing="ease-out"
           data-aos-duration="700"
         >
-          <Col sm={12}>
+          <Col xs={12}>
             <div className={classes.header_div}>
               <h2>Testimonials</h2>
               <p>This is what our client are saying</p>
@@ -24,7 +24,10 @@ const HeroSixSection = () =>
 
         <Row className={classes.row_content}>
 
-        <Col lg={4}>
+        <Col lg={4} data-aos="fade-up"
+          data-aos-easing="ease-out"
+          data-aos-duration="700"
+          data-aos-delay="150">
                 <div className={`${classes.text_div} px-2`}>
                     <h4 className={classes.header_text}>Paul James</h4>
                     <p className={classes.text_location}>Lagos state</p>
@@ -33,7 +36,10 @@ const HeroSixSection = () =>
         </Col>
 
 
-        <Col lg={4}>
+        <Col lg={4} data-aos="fade-up"
+          data-aos-easing="ease-out"
+          data-aos-duration="700"
+          data-aos-delay="300">
         <div className={`${classes.text_div} px-2`}>
                     <h4 className={classes.header_text}>Mercy jude</h4>
                     <p className={classes.text_location}>kogi state</p>
@@ -42,7 +48,10 @@ const HeroSixSection = () =>
         </Col>
 
 
-        <Col lg={4}>
+        <Col lg={4} data-aos="fade-up"
+          data-aos-easing="ease-out"
+          data-aos-duration="700"
+          data-aos-delay="450">
         <div className={`${classes.text_div} px-2`}>
                     <h4 className={classes.header_text}>Lara  one</h4>
                     <p className={classes.text_location}>Imo state</p>
