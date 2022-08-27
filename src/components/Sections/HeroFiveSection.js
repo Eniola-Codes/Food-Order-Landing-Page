@@ -32,8 +32,7 @@ const HeroFiveSection = () =>
         data-aos-duration="700">
               <div className={classes.text_div}>
                   <p className={classes.text_content}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames ut dictumst urna, lorem nibh. Pretium leo hendrerit interdum netusLorem ipsum dolor sit amet.<b/> Consectetur adipiscing elit. Fames ut dictumst urna, lorem nibh. Pretium leo hendrerit interdum netus. Fames ut dictumst urna, lorem nibh.
-
+                  With our app, you never have to settle for unhealthy, expensive takeaway food again.  From spicy noodles to fresh salads, we'll deliver anywhere in your city. Get tasty meals in just 30 minutes. It's simple. We make it easy for you to make smart business decisions fast. Whether you have a busy schedule or just enjoy home-cooked food,
                   </p>
                   <div className={classes.action_div}>
                         <img className={classes.download_badge} src={appStore} alt='ipone app badge'></img>
