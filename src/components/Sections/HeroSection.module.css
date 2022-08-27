@@ -50,17 +50,14 @@
   color: var(--secondarytextcolor);
 }
 
-.order_button
-{
+.order_button {
   color: var(--light);
   text-decoration: none;
 }
 
-.order_button:hover
-{
+.order_button:hover {
   color: var(--light);
 }
-
 
 @media only screen and (min-width: 1400px) and (min-height: 900px) {
   .row {

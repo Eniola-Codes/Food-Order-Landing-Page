@@ -1,116 +1,98 @@
 .row {
-    padding: 100px 0 50px 0;
-  }
+  padding: 100px 0 50px 0;
+}
 
-  .row_content {
-    max-width: 1200px;
-  }
-  
-  .header_div {
-    text-align: center;
-  }
-  
-  .header_div h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--primaryitemcolor);
-  }
-  
-  .header_div p {
-    color: var(--textcolor);
-    font-size: 20px;
-  }
-  
-  .text_div
-{
+.row_content {
+  max-width: 1200px;
+}
+
+.header_div {
+  text-align: center;
+}
+
+.header_div h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primaryitemcolor);
+}
+
+.header_div p {
+  color: var(--textcolor);
+  font-size: 20px;
+}
+
+.text_div {
   padding-right: 10%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.text_content
-{
+.text_content {
   font-size: 24px;
 }
 
-.image_div
-{
+.image_div {
   width: 100%;
   margin-left: auto;
 }
 
-.image{
+.image {
   width: 100%;
 }
 
-
-.download_badge
-{
-    width: 130px;
+.download_badge {
+  width: 130px;
 }
 
-.download_badge2
-{
-    width: 155px;
+.download_badge2 {
+  width: 155px;
 }
 
+@media only screen and (max-width: 991px) {
+  .text_div {
+    padding-right: 0;
+    position: static;
+    transform: translateY(0);
+  }
 
-@media only screen and (max-width: 991px)
-{
+  .image_div {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+  }
 
-  .text_div
-{
-  padding-right: 0;
-  position: static;
-  transform: translateY(0);
-}
+  .text_header {
+    font-size: 36px;
+  }
 
-.image_div
-{
-  width: 100%;
-  margin: auto;
-  margin-top: 30px;
-}
+  .text_content {
+    font-size: 20px;
+  }
 
-.text_header
-{
-  font-size: 36px;
-}
-
-.text_content
-{
-  font-size: 20px;
-}
-
-.row {
+  .row {
     padding: 50px 0 30px 0;
   }
 }
 
-  @media only screen and (max-width: 576px) {
-    .header_div h2 {
-      font-size: 36px;
-    }
-  
-    .header_div p {
-      font-size: 16px;
-    }
-
-    .download_badge
-{
-    width: 110px;
-}
-
-.download_badge2
-{
-    width: 135px;
-}
-
-.action_div
-{
-    text-align: center;
-}
-
+@media only screen and (max-width: 576px) {
+  .header_div h2 {
+    font-size: 36px;
   }
-  
+
+  .header_div p {
+    font-size: 16px;
+  }
+
+  .download_badge {
+    width: 110px;
+  }
+
+  .download_badge2 {
+    width: 135px;
+  }
+
+  .action_div {
+    text-align: center;
+  }
+}

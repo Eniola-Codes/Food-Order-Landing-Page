@@ -1,35 +1,34 @@
 .dish_content {
+  padding: 0 30px;
+}
+
+.dish_content .dish_image_div {
+  text-align: center;
+}
+
+.dish_content .dish_text_div {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  color: var(--tertiarytextcolor);
+}
+
+.dish_content .dish_price_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.dish_content .dish_price_div p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 991px) {
+  .dish_content {
     padding: 0 30px;
   }
-      
-  .dish_content .dish_image_div {
-    text-align: center;
-  }
-  
-  .dish_content .dish_text_div {
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 20px;
-    color: var(--tertiarytextcolor);
-  }
-  
-  .dish_content .dish_price_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  
-  .dish_content .dish_price_div p {
-    font-size: 22px;
-    font-weight: 500;
-  }
-  
-  @media only screen and (max-width: 991px) {  
-    .dish_content {
-      padding: 0 30px;
-    }
-  }
-  
+}

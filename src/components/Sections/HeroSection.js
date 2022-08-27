@@ -27,19 +27,17 @@ const HeroSection = () => {
                 Helping you enjoy comfortable and healthy food anywhere and
                 anytime on the go
               </p>
-              
-                <Link
+
+              <Link
                 className={classes.order_button}
-                  to="dishes"
-                  spy={true}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                >
-                  <TheButton>
-                  Order Now
-                  </TheButton>
-                </Link>
+                to="dishes"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <TheButton>Order Now</TheButton>
+              </Link>
             </div>
           </Col>
           <Col lg={6} className="p-0">

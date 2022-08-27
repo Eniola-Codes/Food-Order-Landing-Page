@@ -28,8 +28,7 @@
   background-color: #ef4c06;
 }
 
-.bump.cart__button
-{
+.bump.cart__button {
   animation: bump 0.3s ease 0s 1 normal;
 }
 

@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import NavCartButton from "./NavCartButton";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,7 +29,7 @@ const TheNavbar = (props) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={`${classes.nav__linkgroup} ms-auto`}>
             <Nav.Link
-              className={`${classes.nav__link} ${classes.firstnav__link} me-4`} 
+              className={`${classes.nav__link} ${classes.firstnav__link} me-4`}
             >
               <Link
                 activeClass={classes.active}
@@ -42,7 +42,7 @@ const TheNavbar = (props) => {
                 Home
               </Link>
             </Nav.Link>
-            <Nav.Link className={`${classes.nav__link} me-4`} >
+            <Nav.Link className={`${classes.nav__link} me-4`}>
               <Link
                 activeClass={classes.active}
                 to="why"
@@ -54,7 +54,7 @@ const TheNavbar = (props) => {
                 Why choose us
               </Link>
             </Nav.Link>
-            <Nav.Link className={`${classes.nav__link} me-4`} >
+            <Nav.Link className={`${classes.nav__link} me-4`}>
               <Link
                 activeClass={classes.active}
                 to="dishes"
@@ -66,7 +66,7 @@ const TheNavbar = (props) => {
                 Our dishes
               </Link>
             </Nav.Link>
-            <Nav.Link className={`${classes.nav__link} me-4`} >
+            <Nav.Link className={`${classes.nav__link} me-4`}>
               <Link
                 activeClass={classes.active}
                 to="about"
@@ -78,7 +78,7 @@ const TheNavbar = (props) => {
                 About us
               </Link>
             </Nav.Link>
-            <Nav.Link className={`${classes.nav__link} me-4`} >
+            <Nav.Link className={`${classes.nav__link} me-4`}>
               <Link
                 activeClass={classes.active}
                 to="testimonials"

@@ -19,30 +19,30 @@ const App = () => {
   const onCloseCartHandler = () => {
     setCartIsShown(false);
   };
+  //END
 
+  //EVent to occur on Order
   const onOrderHandler = () => {
-
     setCartIsShown(false);
 
-        Swal.fire({
+    Swal.fire({
       title: "Successful!",
       text: "Your order is on the way",
       icon: "success",
-    })
-
-
+    });
   };
 
+  //END
 
-//END
-
-//Rendering the cart and all the sections
+  //Rendering the cart and all the sections
   return (
     <CartProvider>
-      {cartIsShown && <Cart onCloseCart={onCloseCartHandler} onOrder={onOrderHandler}/>}
+      {cartIsShown && (
+        <Cart onCloseCart={onCloseCartHandler} onOrder={onOrderHandler} />
+      )}
       <TheNav onShowCart={onShowCartHandler} />
-      <Sections/>
-      <TheFooter/>
+      <Sections />
+      <TheFooter />
     </CartProvider>
   );
   //END

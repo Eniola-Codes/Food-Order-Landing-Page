@@ -16,8 +16,8 @@ const Sections = () => {
       <HeroThreeSection />
       <HeroFourSection />
       <HeroFiveSection />
-      <HeroSixSection/>
-      <HeroSevenSection/>
+      <HeroSixSection />
+      <HeroSevenSection />
     </main>
   );
   //END

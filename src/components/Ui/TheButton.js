@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./TheButton.module.css";
 
 const TheButton = (props) => {
-
   //Layout and structure of the TheButton component
   return (
     <button

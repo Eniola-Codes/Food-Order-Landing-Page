@@ -6,9 +6,11 @@ import ReactDOM from "react-dom";
 
 const Backdrop = (props) => {
   //Rendered the backdrop component
-  return <div>
-  <div className={classes.backdrop} onClick={props.OnCloseCart}></div>
-  </div>;
+  return (
+    <div>
+      <div className={classes.backdrop} onClick={props.OnCloseCart}></div>
+    </div>
+  );
   //END
 };
 
@@ -25,10 +27,13 @@ const ModalOverLay = (props) => {
 const modalElements = document.getElementById("modal-overlay");
 
 const Modal = (props) => {
-    //Rendered the components above
+  //Rendered the components above
   return (
     <>
-      {ReactDOM.createPortal(<Backdrop onCloseCart={props.OnCloseCart}/> , modalElements)}
+      {ReactDOM.createPortal(
+        <Backdrop onCloseCart={props.OnCloseCart} />,
+        modalElements
+      )}
 
       {ReactDOM.createPortal(
         <ModalOverLay>{props.children}</ModalOverLay>,
@@ -42,4 +47,3 @@ const Modal = (props) => {
 //END
 
 export default Modal;
-

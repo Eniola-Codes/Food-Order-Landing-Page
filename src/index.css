@@ -10,21 +10,21 @@
 
 :root {
   --primarybackground: #ffe9e0;
-  --primaryitemcolor : #FF4D00;
-  --textcolor: rgba(0,0,0,0.81);
+  --primaryitemcolor: #ff4d00;
+  --textcolor: rgba(0, 0, 0, 0.81);
   --primarytextcolor: #000000;
   --secondarytextcolor: #959190;
-  --tertiarytextcolor: #443D3D;
-  --bordercolor : rgba(255, 77, 0,0.6);
-  --secondarybordercolor: #E1E1E1;
-  --tertiarybordercolor: #D9D9D9;
-  --heartcolor: #E81224;
-  --light: #FFFFFF;
+  --tertiarytextcolor: #443d3d;
+  --bordercolor: rgba(255, 77, 0, 0.6);
+  --secondarybordercolor: #e1e1e1;
+  --tertiarybordercolor: #d9d9d9;
+  --heartcolor: #e81224;
+  --light: #ffffff;
   --dark: #000000;
 }
 
-html,body
-{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -33,23 +33,20 @@ body {
   color: var(--primarytextcolor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-position: relative;
+  position: relative;
 }
 
- ::-webkit-scrollbar
-{ 
-   background-color: #F1F1F1; 
-   width: 10px;
+::-webkit-scrollbar {
+  background-color: #f1f1f1;
+  width: 10px;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background-color: var(--primaryitemcolor) !important;
   border-radius: 10px !important;
 }
- 
-::selection
-{
+
+::selection {
   background-color: var(--primaryitemcolor);
   color: var(--light);
 }

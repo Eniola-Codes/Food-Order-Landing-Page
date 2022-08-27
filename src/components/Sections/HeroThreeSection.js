@@ -46,64 +46,60 @@ const dummyListtwo = [
     id: "d5",
     src: dish5,
     name: "Amala and ewedu soup",
-    price: 7000.0000,
+    price: 7000.0,
   },
 
   {
     id: "d6",
     src: dish6,
     name: "Eba and okra soup",
-    price: 3000.000,
+    price: 3000.0,
   },
 ];
 //END
 
 const HeroThreeSection = () => {
-
   //Mapping the data from the object above and storing them in a variable
   const dishList1 = dummyListone.map((dish) => (
-    <Col
-      lg={4}
-      className={classes.dish_col}
-    >
-      <div data-aos="fade-up"
-      data-aos-easing="ease-out"
-      data-aos-duration="700">
-      <HeroThreeContent
-        key={dish.id}
-        id={dish.id}
-        name={dish.name}
-        src={dish.src}
-        price={dish.price}
-      />
+    <Col lg={4} className={classes.dish_col}>
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="700"
+      >
+        <HeroThreeContent
+          key={dish.id}
+          id={dish.id}
+          name={dish.name}
+          src={dish.src}
+          price={dish.price}
+        />
       </div>
-   </Col>
+    </Col>
   ));
 
   const dishList2 = dummyListtwo.map((dish) => (
-    <Col
-      lg={4}
-      className={classes.dish_col}     
-    >
-      <div data-aos="fade-up"
-      data-aos-easing="ease-out"
-      data-aos-duration="700">
-      <HeroThreeContent
-        key={dish.id}
-        id={dish.id}
-        name={dish.name}
-        src={dish.src}
-        price={dish.price}
-      />
+    <Col lg={4} className={classes.dish_col}>
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out"
+        data-aos-duration="700"
+      >
+        <HeroThreeContent
+          key={dish.id}
+          id={dish.id}
+          name={dish.name}
+          src={dish.src}
+          price={dish.price}
+        />
       </div>
-   </Col>
+    </Col>
   ));
-//END
+  //END
 
-
-//Rendering the Hero Three section
+  //Rendering the Hero Three section
   return (
-    <section id='dishes'>
+    <section id="dishes">
       <Container>
         <Row
           className={`${classes.row} mx-auto`}
@@ -119,15 +115,9 @@ const HeroThreeSection = () => {
           </Col>
         </Row>
 
-        <Row className={classes.row_dish}>
-          {dishList1}
-          </Row>
+        <Row className={classes.row_dish}>{dishList1}</Row>
 
-          <Row>
-          {dishList2}
-          </Row>
-
-
+        <Row>{dishList2}</Row>
       </Container>
     </section>
   );

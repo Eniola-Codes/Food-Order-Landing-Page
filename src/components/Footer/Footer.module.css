@@ -8,122 +8,99 @@
   color: var(--light);
 }
 
-.content_div
-{
-    margin-top: 20px;
-    padding-right: 20%;
+.content_div {
+  margin-top: 20px;
+  padding-right: 20%;
 }
 
-.mobile_copy
-{
-    margin-top: 50px;
-    text-align: center;
-    display: none;
+.mobile_copy {
+  margin-top: 50px;
+  text-align: center;
+  display: none;
 }
 
-.about p
-{
-    cursor: pointer;
-    transition : 0.3s;
-    margin-top: 20px;
+.about p {
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
 }
 
-.about p:hover
-{
-    color: var(--primaryitemcolor)
+.about p:hover {
+  color: var(--primaryitemcolor);
 }
 
-.social
-{
-text-align: center;    
+.social {
+  text-align: center;
 }
 
-.social p
-{
-    cursor: pointer;
-    width:50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 10px;
-    transition: 0.3s;
+.social p {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+  transition: 0.3s;
 }
 
-.social p:hover
-{
-    background-color: var(--primaryitemcolor);
+.social p:hover {
+  background-color: var(--primaryitemcolor);
 }
 
-.social_icon
-{
-    padding: 10px;
+.social_icon {
+  padding: 10px;
 }
 
-.navbar_brand
-{
-    cursor: pointer;
+.navbar_brand {
+  cursor: pointer;
 }
 
-.eniola_codes
-{
-    color: var(--light);
-    text-decoration: none;
-    transition: 0.3s;
-    cursor: pointer;
-    font-weight: 500;
-    font-weight: 18px;
+.eniola_codes {
+  color: var(--light);
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: 500;
+  font-weight: 18px;
 }
 
-.eniola_codes:hover
-{
-    color: var(--primaryitemcolor);
+.eniola_codes:hover {
+  color: var(--primaryitemcolor);
 }
 .content_div i,
-.mobile_copy i
-{
-    color: var(--heartcolor);
-    font-size: 18px;
+.mobile_copy i {
+  color: var(--heartcolor);
+  font-size: 18px;
 }
 
-
-@media only screen and (max-width: 991px)
-{
-
-.content_div p:nth-child(2)
-{
+@media only screen and (max-width: 991px) {
+  .content_div p:nth-child(2) {
     display: none;
-}
+  }
 
-.about
-{
+  .about {
     margin-top: 20px;
-}
+  }
 
-.about p
-{
+  .about p {
     margin-top: 10px;
-}
+  }
 
-.social
-{
-text-align: left;   
-margin-top: 20px;
+  .social {
+    text-align: left;
+    margin-top: 20px;
+  }
 
-}
-
-.mobile_copy
-{
+  .mobile_copy {
     margin-top: 50px;
     text-align: center;
     display: block;
-}
+  }
 
-.social p
-{
+  .social p {
     margin: 10px 0 0;
     display: inline-block;
     margin-top: 0px;
     margin-right: 20px;
-}
-
+  }
 }

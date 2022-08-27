@@ -1,83 +1,73 @@
 .row {
-    padding: 100px 0 30px 0;
+  padding: 100px 0 30px 0;
+}
+
+.row_content {
+  max-width: 1200px;
+  padding: 0 0 150px 0;
+  margin: auto;
+}
+
+.header_div {
+  text-align: center;
+}
+
+.header_div h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--textcolor);
+}
+
+.header_div p {
+  color: var(--textcolor);
+  font-size: 20px;
+}
+
+.input_group {
+  text-align: center;
+}
+
+.input {
+  height: 55px;
+  width: 400px;
+  border: 1px solid var(--tertiarybordercolor);
+  color: var(--textcolor);
+  padding-left: 20px;
+  border-radius: 7px;
+}
+
+.button {
+  padding: 13px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .input {
+    width: 300px;
+  }
+
+  .button {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header_div h2 {
+    font-size: 36px;
+  }
+
+  .header_div p {
+    font-size: 16px;
+  }
+
+  .input {
+    width: 200px;
+  }
+
+  .button {
+    width: 100px;
   }
 
   .row_content {
-    max-width: 1200px;
-    padding: 0 0 150px 0;
-    margin: auto;
+    padding: 0 0 100px 0;
   }
-
-  .header_div {
-    text-align: center;
-  }
-  
-  .header_div h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--textcolor);
-  }
-  
-  .header_div p {
-    color: var(--textcolor);
-    font-size: 20px;
-  }
-
-  .input_group
-  {
-    text-align: center;
-  }
-
-  .input
-  {
-    height: 55px;
-    width: 400px;
-    border: 1px solid var(--tertiarybordercolor);
-    color: var(--textcolor);
-    padding-left: 20px;
-    border-radius: 7px;
-  }
-
-  .button
-  {
-    padding: 13px 0;
-  }
-
-  @media only screen and (max-width: 767px)
-  {
-    .input
-    {
-      width: 300px;
-    }
-  
-    .button
-    {
-      width: 130px;
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .header_div h2 {
-      font-size: 36px;
-    }
-  
-    .header_div p {
-      font-size: 16px;
-    }
-
-    .input
-    {
-      width: 200px;
-    }
-  
-    .button
-    {
-      width: 100px;
-    }
-
-    .row_content {
-        padding: 0 0 100px 0;
-      }
-    
-
-  }
+}

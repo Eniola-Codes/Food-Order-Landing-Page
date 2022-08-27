@@ -3,9 +3,8 @@
   padding: 10px 5rem;
 }
 
-.navbar_brand
-{
-    cursor: pointer;
+.navbar_brand {
+  cursor: pointer;
 }
 
 .navbar .toggle {
@@ -42,7 +41,6 @@
 .navbar .nav__link:hover {
   color: var(--primaryitemcolor);
 }
-
 
 @media only screen and (max-width: 1200px) {
   .navbar {

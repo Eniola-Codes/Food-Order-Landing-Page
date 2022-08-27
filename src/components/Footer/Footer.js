@@ -9,6 +9,7 @@ import twitter from "../../assets/Icon/twitter.png";
 import fb from "../../assets/Icon/facebook.png";
 
 const Footer = () => {
+  //Structure & layout of the footer
   return (
     <div className={classes.footer_bg}>
       <Container>
@@ -121,6 +122,7 @@ const Footer = () => {
       </Container>
     </div>
   );
+  //END
 };
 
 export default Footer;
