@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Input from "../Ui/Input";
 import TheButton from "../Ui/TheButton";
 import Tooltip from "../Ui/Tooltip";
+import classes from '../Ui/Tooltip.module.css';
 
 const HeroThreeForm = (props) => {
   //using useRef and useState hooks
@@ -43,26 +44,28 @@ const HeroThreeForm = (props) => {
       setShowTooltip(true);
   }
 
+  const tipShow = `${showTooltip ? classes.show : ""}`;
+
   useEffect(() => {
     if(showTooltip === false)
     {
       return;
     }
 
-    const bumpTimer = setTimeout(() => {
+    const toolTimer = setTimeout(() => {
       setShowTooltip(false);
-    }, 300);
+    }, 1000);
 
     return () => {
-      clearTimeout(bumpTimer);
+      clearTimeout(toolTimer);
     };
 
-  }, [])
+  }, [showTooltip])
 
   //Layout and structure of form to be passed to the HeroThreeSection component
   return (
     <>
-   {showTooltip && <Tooltip />}
+   <Tooltip className={tipShow} />
     <form onSubmit={onSubmitHandler}>
       <Input
         ref={inputRef}

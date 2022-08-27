@@ -32,13 +32,21 @@ const Footer = () => {
               </div>
               <div className={classes.content_div}>
                 <p>
-                  Solution for easy and flexible getting meals for the household.You can trust us
-                  anywhere through this platform
+                  Solution for easy and flexible getting meals for the
+                  household.You can trust us anywhere through this platform
                 </p>
-                <p>&copy;2022 Made with <i className="bi bi-heart-fill"></i> by&nbsp;
-            <Link to={{ pathname: "https://github.com/Eniola-Codes" }} target="_blank" className={classes.eniola_codes}>
-              EniolaCodes
-            </Link></p>
+                <p>
+                  &copy;2022 Made with <i className="bi bi-heart-fill"></i>{" "}
+                  by&nbsp;
+                  <a
+                    href="https://github.com/Eniola-Codes"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={classes.eniola_codes}
+                  >
+                    EniolaCodes
+                  </a>
+                </p>
               </div>
             </div>
           </Col>
@@ -56,35 +64,58 @@ const Footer = () => {
           <Col lg={3}>
             <div className={classes.social}>
               <h3>Social</h3>
-              <p>
-                <img
-                  src={insta}
-                  alt="instagram"
-                  className={classes.social_icon}
-                ></img>
-              </p>
-              <p>
-                <img
-                  src={twitter}
-                  alt="twitter"
-                  className={classes.social_icon}
-                ></img>
-              </p>
-              <p>
-                <img
-                  src={fb}
-                  alt="facebook"
-                  className={classes.social_icon}
-                ></img>
-              </p>
+              <a
+                href="https://www.instagram.com/code_redex/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>
+                  <img
+                    src={insta}
+                    alt="instagram"
+                    className={classes.social_icon}
+                  ></img>
+                </p>
+              </a>
+              <a
+                href="https://mobile.twitter.com/EniolaCodes/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>
+                  <img
+                    src={twitter}
+                    alt="twitter"
+                    className={classes.social_icon}
+                  ></img>
+                </p>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/eni-ola/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <p>
+                  <img
+                    src={fb}
+                    alt="facebook"
+                    className={classes.social_icon}
+                  ></img>
+                </p>
+              </a>
             </div>
           </Col>
 
           <p className={classes.mobile_copy}>
-          &copy;2022 Made with <i className="bi bi-heart-fill"></i> by&nbsp;
-            <Link to={{ pathname: "https://github.com/Eniola-Codes" }} target="_blank" className={classes.eniola_codes}>
+            &copy;2022 Made with <i className="bi bi-heart-fill"></i> by&nbsp;
+            <a
+              href="https://github.com/Eniola-Codes"
+              target="_blank"
+              rel="noreferrer"
+              className={classes.eniola_codes}
+            >
               EniolaCodes
-            </Link>
+            </a>
           </p>
         </Row>
       </Container>

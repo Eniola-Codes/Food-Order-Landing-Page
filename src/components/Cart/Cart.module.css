@@ -38,16 +38,6 @@
   font-weight: 700;
 }
 
-.items ::-webkit-scrollbar {
-  background-color: var(--light) !important;
-  width: 8px !important;
-}
-
-.items ::-webkit-scrollbar-thumb {
-  background-color: var(--secondarybordercolor) !important;
-  border-radius: 10px !important;
-}
-
 @media only screen and (max-width: 576px) {
   .amount p {
     font-size: 22px;
