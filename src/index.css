@@ -23,11 +23,17 @@
   --dark: #000000;
 }
 
+html,body
+{
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif !important;
   color: var(--primarytextcolor);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+position: relative;
 }
 
  ::-webkit-scrollbar

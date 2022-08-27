@@ -25,7 +25,6 @@ const TheNavbar = (props) => {
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className={classes.toggle}
-          id="navbar-toggler"
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className={`${classes.nav__linkgroup} ms-auto`}>

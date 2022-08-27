@@ -65,7 +65,7 @@ const HeroThreeForm = (props) => {
   //Layout and structure of form to be passed to the HeroThreeSection component
   return (
     <>
-   <Tooltip className={tipShow} />
+   {/* <Tooltip className={tipShow} /> */}
     <form onSubmit={onSubmitHandler}>
       <Input
         ref={inputRef}
