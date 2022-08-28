@@ -29,6 +29,13 @@
   transition: 0.3s;
 }
 
+.navbar .nav__link:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
 .navbar .nav__link .active {
   color: var(--primaryitemcolor) !important;
   text-decoration: none;
