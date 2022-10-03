@@ -42,7 +42,7 @@ const cartReducer = (state, action) => {
       //END
     } else {
       //Adding the item into the cart if it doesn't exist before before
-      updatedItems = state.items.concat(action.item);
+      updatedItems = [action.item, ...state.items]; // this is to ensure that the new item being added to the cart is added to the top of the cart items and not to the bottom of the cart items
       //END
     }
     return {
