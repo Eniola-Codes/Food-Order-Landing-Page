@@ -12,7 +12,7 @@ let locallyStoredTotalAmount = localStorage.getItem("storedTotalAmount") || 0
 //Created a default state for the cart to be used in the reducer function and the reducer hook defalt state;
 const defaultCartState = {
   items: locallyStoredCartItem, // set the default state of cartItems to the locally stored cartItem or an empty array if there is no locally stored item
-  totalAmount: locallyStoredTotalAmount,// set the default state of cart totalAmount to the locally stored totalAmount or an empty array if there is no locally stored totalAmount
+  totalAmount: +locallyStoredTotalAmount,// set the default state of cart totalAmount to the locally stored totalAmount or an empty array if there is no locally stored totalAmount
 };
 //END
 
