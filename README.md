@@ -8,6 +8,8 @@ A simulation of an Application where you can order and pay for food
 
 Homely is an single page application with a well structured layout, where you view both information  of the web app and order food items by adding them to the cart. 
 
+![full_page](https://github.com/Eniola-Codes/Food-Order-Landing-Page/blob/main/src/assets/image/full_image.png?raw=true)
+
 The application let you see both the name and image of each product then gives you the flexibility to add between one to five 5 items to the cart at once with a single button click. 
 
 There is a Cart button located at the navbar in the header section, this buttons contains a counter in a badge, which counts the number of items in the cart an if there are no items in the cart, it displays 0. For a better user experience on the frontend of the application, the button undergoes a subtle bump whenever an item has being added to the cart.
@@ -44,7 +46,6 @@ This is the version 1.0 of the food order application but i hope to improve the 
 
 # Installation and Running
 
-https://github.com/Eniola-Codes/Food-Order-Landing-Page/blob/main/src/assets/image/full_image.png?raw=true
 # End Result
 
 Click the link : https://foodapp-by-eniola.netlify.com
