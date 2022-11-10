@@ -44,7 +44,7 @@ This is the version 1.0 of the food order application but i hope to improve the 
 
 # Installation and Running
 
-
+<img src='./'></img>
 
 # End Result
 
