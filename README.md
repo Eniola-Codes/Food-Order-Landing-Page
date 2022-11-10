@@ -44,8 +44,7 @@ This is the version 1.0 of the food order application but i hope to improve the 
 
 # Installation and Running
 
-<img src='./'></img>
-
+https://github.com/Eniola-Codes/Food-Order-Landing-Page/blob/main/src/assets/image/full_image.png?raw=true
 # End Result
 
 Click the link : https://foodapp-by-eniola.netlify.com
