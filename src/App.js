@@ -18,6 +18,7 @@ const App = () => {
 
   const onCloseCartHandler = () => {
     setCartIsShown(false);
+    
   };
   //END
 
