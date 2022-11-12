@@ -49,12 +49,12 @@ This is the version 1.0 of the food order application but i hope to improve the 
 - A checkout form
 - Implement a dummy flutterwave payment gateway
 - Store user order in firebase
-- Making the code more cleaner and readable.
-- improve the user experience
+- Making the code more cleaner and improving the user experience.
+- 
 
 # Installation and Running
 
-git clone or pull the project into your terminal, open the project folder on your local laptop and run "npm start" 
+git clone or pull the project in your terminal, open the project folder on your local laptop in a code editor and run "npm start" in your editors terminal.
 
 
 
