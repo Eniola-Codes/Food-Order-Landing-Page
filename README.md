@@ -50,7 +50,7 @@ This is the version 1.0 of the food order application but i hope to improve the 
 - Implement a dummy flutterwave payment gateway
 - Store user order in firebase
 - Making the code more cleaner and improving the user experience.
-- 
+- Css modules to prevent clashing of class names across components
 
 # Installation and Running
 
