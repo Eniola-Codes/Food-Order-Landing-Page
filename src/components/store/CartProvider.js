@@ -1,10 +1,18 @@
 import React, { useReducer } from "react";
 import CartContext from "./cartcontext";
 
+// Get the locally stored CartItems from local storage, if no item is stored locally fallback to an empty array
+let locallyStoredCartItem = JSON.parse(localStorage.getItem("storedCartItem") || "[]")
+//END
+
+// Get the locally stored totalAmount from local storage, if no totalAmount is stored locally fallback to an empty array
+let locallyStoredTotalAmount = localStorage.getItem("storedTotalAmount") || 0
+// END
+
 //Created a default state for the cart to be used in the reducer function and the reducer hook defalt state;
 const defaultCartState = {
-  items: [],
-  totalAmount: 0,
+  items: locallyStoredCartItem, // set the default state of cartItems to the locally stored cartItem or an empty array if there is no locally stored item
+  totalAmount: +locallyStoredTotalAmount,// set the default state of cart totalAmount to the locally stored totalAmount or an empty array if there is no locally stored totalAmount
 };
 //END
 
@@ -42,9 +50,15 @@ const cartReducer = (state, action) => {
       //END
     } else {
       //Adding the item into the cart if it doesn't exist before before
-      updatedItems = state.items.concat(action.item);
+      updatedItems = [action.item, ...state.items]; // this is to ensure that the new item being added to the cart is added to the top of the cart items and not to the bottom of the cart items
       //END
     }
+    // stored the cartItems in local storage of the web browser, so that users don"t lose cartItems when they refresh the browser
+    localStorage.setItem("storedCartItem", JSON.stringify([...updatedItems]))
+    //END
+    // stored the updatedTotalAmount in local storage of the web browser, so that users don"t lose updatedTotalAmount when they refresh the browser
+    localStorage.setItem("storedTotalAmount", updatedTotalAmount)
+
     return {
       //Returning the items data and totalAmount
       items: updatedItems,
@@ -85,6 +99,11 @@ const cartReducer = (state, action) => {
       updatedItems[existingItemIndex] = updatedItem;
       //END
     }
+    // stored the cartItems in local storage of the web browser, so that users don"t lose cartItems when they refresh the browser
+    localStorage.setItem("storedCartItem", JSON.stringify([...updatedItems]))
+    //END
+    // stored the updatedTotalAmount in local storage of the web browser, so that users don"t lose updatedTotalAmount when they refresh the browser
+    localStorage.setItem("storedTotalAmount", updatedTotalAmount)
     return {
       //Returning the items data and totalAmount
       items: updatedItems,
