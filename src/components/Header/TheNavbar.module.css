@@ -1,6 +1,6 @@
 .navbar {
   background-color: var(--primarybackground);
-  padding: 10px 5rem;
+  padding: 5px 5rem;
 }
 
 .navbar_brand {
@@ -22,8 +22,12 @@
   align-items: center;
 }
 
+.navbar .m_link {
+  display: none;
+}
+
 .navbar .nav__link {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--dark);
   transition: 0.3s;
@@ -34,7 +38,6 @@
   outline: none !important;
   box-shadow: none !important;
 }
-
 
 .navbar .nav__link .active {
   color: var(--primaryitemcolor) !important;
@@ -57,5 +60,18 @@
   .navbar .nav__linkgroup {
     position: relative;
     display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .m_link {
+    display: block;
+  }
+
+  .navbar .nav__link {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--dark);
+    transition: 0.3s;
   }
 }
